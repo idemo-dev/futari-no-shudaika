@@ -1,0 +1,10 @@
+export { Hero } from "./Hero";
+export { BrandStatement } from "./BrandStatement";
+export { FreeTrial } from "./FreeTrial";
+export { ForYou } from "./ForYou";
+export { Service } from "./Service";
+export { Pricing } from "./Pricing";
+export { Process } from "./Process";
+export { Sample } from "./Sample";
+export { FAQ } from "./FAQ";
+export { FooterCTA } from "./FooterCTA";
