@@ -1,4 +1,11 @@
+"use client";
+
+import { useState } from "react";
+import { ContactModal } from "../ContactModal";
+
 export function FooterCTA() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="py-16 md:py-32 px-10 md:px-6 bg-[#2d2d2d]">
       <div className="max-w-3xl mx-auto text-center">
@@ -17,12 +24,12 @@ export function FooterCTA() {
           気に入らなければ、購入の必要はありません。
         </p>
 
-        <a
-          href="#"
+        <button
+          onClick={() => setIsModalOpen(true)}
           className="inline-block px-12 py-4 bg-white text-[#2d2d2d] text-base tracking-wider hover:bg-[#f9f6f2] transition-colors duration-300"
         >
           無料で曲を作ってみる
-        </a>
+        </button>
 
         {/* Footer */}
         <div className="mt-24 pt-12 border-t border-white/10">
@@ -34,6 +41,9 @@ export function FooterCTA() {
           </p>
         </div>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

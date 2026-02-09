@@ -1,0 +1,45 @@
+{
+  "lastCheckedPluginVersion": "2.7.1",
+  "files": {
+    "CLAUDE.md": {
+      "templateVersion": "unknown",
+      "fileHash": "bebffac9f7a177ecfeecfa8338c5046aceb7c116567062bc37a28ef2123310de",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    "AGENTS.md": {
+      "templateVersion": "unknown",
+      "fileHash": "e2787062d2b7905c2cb3989fc834578bc36e4758c222a62e0f9968b8c84494b6",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    "Plans.md": {
+      "templateVersion": "unknown",
+      "fileHash": "bc2e48fc475feaf90bc27b7a50cc902340453d3062e01c0eda57a31a248d3ab5",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    ".claude/rules/test-quality.md": {
+      "templateVersion": "unknown",
+      "fileHash": "a49d6ea0a92fa6af48fee923a948a3f644b3477a6f65e17bd23d671571f1459d",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    ".claude/rules/implementation-quality.md": {
+      "templateVersion": "unknown",
+      "fileHash": "a4cff79e1d075c0ddc0f7cb487851d62e5b9615292fe97d26bd1c48dd7135895",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    ".claude/memory/decisions.md": {
+      "templateVersion": "unknown",
+      "fileHash": "96a5df53efbb216412a5f0b61fc898576d752ec028ca42f38397bc9a5f0e5def",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    ".claude/memory/patterns.md": {
+      "templateVersion": "unknown",
+      "fileHash": "4e751be8f965ada393c948184cdad48976412305deec4bbbb006050d918c1289",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    },
+    ".claude/settings.json": {
+      "templateVersion": "unknown",
+      "fileHash": "ed05f8bf576a65939017942cf4a43a16bc009ca529852e3df375ca3aa4351d3d",
+      "recordedAt": "2026-01-28T12:24:28Z"
+    }
+  }
+}

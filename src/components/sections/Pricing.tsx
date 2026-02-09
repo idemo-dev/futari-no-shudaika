@@ -1,4 +1,17 @@
+"use client";
+
+import { useState } from "react";
+import { ContactModal } from "../ContactModal";
+
 export function Pricing() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<string | undefined>();
+
+  const handlePlanClick = (planName: string) => {
+    setSelectedPlan(planName);
+    setIsModalOpen(true);
+  };
+
   const plans = [
     {
       name: "Basic",
@@ -7,7 +20,6 @@ export function Pricing() {
       description: "まずはここから始める方に",
       features: [
         "オリジナル楽曲（フルバージョン）",
-        "歌手スタイル2種類から選択",
         "サブスク配信",
         "試聴用プレビュー",
         "修正1回まで無料",
@@ -21,7 +33,6 @@ export function Pricing() {
       description: "特別な日を最高の形で",
       features: [
         "ベーシックの全て",
-        "歌手スタイル多種類から選択",
         "印刷用歌詞カードデータ",
         "動画用音源データ（WAV）",
         "修正3回まで無料",
@@ -98,16 +109,16 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <a
-                  href="#"
-                  className={`block text-center py-4 text-sm tracking-wider transition-colors duration-300 mt-8 ${
+                <button
+                  onClick={() => handlePlanClick(plan.nameJa)}
+                  className={`block w-full text-center py-4 text-sm tracking-wider transition-colors duration-300 mt-8 ${
                     plan.popular
                       ? "bg-white text-[#2d2d2d] hover:bg-[#f9f6f2]"
                       : "bg-[#2d2d2d] text-white hover:bg-[#1a1a1a]"
                   }`}
                 >
                   このプランで始める
-                </a>
+                </button>
               </div>
             </div>
           ))}
@@ -117,6 +128,13 @@ export function Pricing() {
           ※ まずは無料で1曲お試しいただけます。気に入ったらご購入ください。
         </p>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        planName={selectedPlan}
+      />
     </section>
   );
 }

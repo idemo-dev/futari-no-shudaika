@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-02-09T04:20:48.029Z",
+  "skills": {},
+  "commands": {
+    "harness-init": {
+      "count": 1,
+      "lastUsed": "2026-01-28T04:07:01.045Z"
+    },
+    "work": {
+      "count": 1,
+      "lastUsed": "2026-01-28T04:11:14.969Z"
+    }
+  },
+  "agents": {},
+  "hooks": {
+    "session-init": {
+      "triggered": 3,
+      "blocked": 0,
+      "lastTriggered": "2026-02-09T04:20:48.028Z"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "session_id": "52428DEB-21B3-4252-933F-6066C6A50570",
+  "started_at": "2026-02-09T04:20:47Z",
+  "cwd": "/Users/shionoryota/desktop/futari-no-shudaika",
+  "project_name": "futari-no-shudaika",
+  "prompt_seq": 2,
+  "git": {
+    "branch": "main",
+    "uncommitted_changes": 8,
+    "last_commit": "6048d83"
+  },
+  "plans": {
+    "exists": true,
+    "last_modified": 1769573681,
+    "wip_tasks": 0,
+    "todo_tasks": 0,
+    "pending_tasks": 0,
+    "completed_tasks": 11
+  },
+  "changes_this_session": [
+    {
+      "file": "src/components/sections/Pricing.tsx",
+      "action": "Edit",
+      "timestamp": "2026-02-09T04:29:35Z",
+      "important": false
+    },
+    {
+      "file": "src/components/sections/Pricing.tsx",
+      "action": "Edit",
+      "timestamp": "2026-02-09T04:29:52Z",
+      "important": false
+    },
+    {
+      "file": "src/components/sections/FAQ.tsx",
+      "action": "Edit",
+      "timestamp": "2026-02-09T04:30:04Z",
+      "important": false
+    }
+  ],
+  "intent": "literal",
+  "ended_at": "2026-02-09T04:30:07Z",
+  "duration_minutes": 549,
+  "memory_logged": true
+}

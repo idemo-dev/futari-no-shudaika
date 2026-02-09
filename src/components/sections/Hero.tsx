@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { ContactModal } from "../ContactModal";
 
 const memories = [
   { src: "/memory-04.png", label: "出会い" },
@@ -16,6 +17,7 @@ export function Hero() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [imageProgress, setImageProgress] = useState(0);
   const imageProgressRef = useRef(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const intervalDuration = 4000; // 4 seconds per image
   const tickInterval = 50; // update every 50ms
@@ -114,12 +116,12 @@ export function Hero() {
           </p>
 
           {/* CTA */}
-          <a
-            href="#"
+          <button
+            onClick={() => setIsModalOpen(true)}
             className="inline-block px-4 sm:px-8 md:px-12 py-2 sm:py-3 md:py-4 bg-[#2d2d2d] text-white text-xs sm:text-sm md:text-base tracking-wider hover:bg-[#1a1a1a] transition-colors duration-300"
           >
             無料で曲を作ってみる
-          </a>
+          </button>
 
           <p className="mt-3 sm:mt-4 md:mt-6 text-[10px] sm:text-xs md:text-sm text-[#a3a3a3]">
             まずは無料で体験。気に入ったらご購入。
@@ -225,6 +227,9 @@ export function Hero() {
           <div className="w-px h-12 bg-gradient-to-b from-[#a3a3a3] to-transparent" />
         </div>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }
