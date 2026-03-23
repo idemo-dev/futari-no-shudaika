@@ -73,7 +73,7 @@ const songs: Record<string, SongData> = {
 おかずは不揃い　それでいい
 これが　ふたりの味`,
   },
-  "michi": {
+  "yorimichi": {
     title: "寄り道",
     artist: "ふたりの主題歌",
     lyricist: "nought",

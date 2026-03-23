@@ -239,7 +239,7 @@ const concepts: Record<string, ConceptData> = {
       },
     ],
   },
-  "michi": {
+  "yorimichi": {
     title: "寄り道",
     sections: [
       {
